@@ -140,10 +140,15 @@ public class LoopsConcept {
 			//retry logic: count =3
 			//country drop down
 			//flight booking/movie ticket
+		int count=1;
+		for(;;) {
+			System.out.println("Bye!!");
+			if(count==10) {
+				break;
+			}
+			count++;
+		}
+		System.out.println("====================");
+		
 	}
 }
-
-
-
-
-
