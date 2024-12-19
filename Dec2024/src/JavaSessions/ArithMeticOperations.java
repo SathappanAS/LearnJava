@@ -37,6 +37,10 @@ public class ArithMeticOperations {
 		//0.0001100110011001101 + 0.00110011001100110011 ==> large binary number--> double(64 bits)
 		//x --> loss of precision error in floating point numbers
 		
+		System.out.println(9%3); // (Reminder is 0 )
+		System.out.println(9%2); // (Reminder is 1 )
+		System.out.println(9/3); // (quotient is 3)
+		System.out.println(9/2); // (quotient is 4)
 		
 	}
 
