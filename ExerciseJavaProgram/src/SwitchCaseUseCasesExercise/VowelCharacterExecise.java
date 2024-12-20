@@ -8,25 +8,23 @@ public class VowelCharacterExecise {
 		
 		switch (alpha) {
 		case 97:
-			System.out.println(alpha + " is a vowel");
+			System.out.println(alpha + " is a vowel " + (int)alpha);
 			break;
 		case 101:
-			System.out.println(alpha + " is a vowel");
+			System.out.println(alpha + " is a vowel" + (int)alpha);
 			break;
 		case 105:
-			System.out.println(alpha + " is a vowel");
+			System.out.println(alpha + " is a vowel" + (int)alpha);
 			break;
 		case 111:
-			System.out.println(alpha + " is a vowel");
+			System.out.println(alpha + " is a vowel" + (int)alpha);
 			break;
 		case 117:
-			System.out.println(alpha + " is a vowel");
+			System.out.println(alpha + " is a vowel"+ (int)alpha);
 			break;
 		default:
-			System.out.println(alpha + " is not a vowel");
+			System.out.println(alpha + " is not a vowel"+ (int)alpha);
 			break;
 		}
-
 	}
-
 }
