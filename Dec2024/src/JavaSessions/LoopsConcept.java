@@ -150,5 +150,25 @@ public class LoopsConcept {
 		}
 		System.out.println("====================");
 		
+		
+		//do-while loop
+		//1 to 10:
+		
+		int j=1;
+		do {
+			System.out.println(j);// 1 2 3 4 5 6 7 8 9 10
+			j++;
+		}
+		while(j<=10);
+			
+		//user cases:
+		//wait for web element
+		//element is on the page : not available
+		// do { 
+					//wait for the element
+					//click on the element
+		//} while(!element is displayed)
+			
+		
 	}
 }
