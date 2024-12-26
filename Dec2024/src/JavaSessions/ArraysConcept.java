@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArraysConcept {
 
 	public static void main(String[] args) {
-		//array:
+		/*               array             */
 		//array : static array //Homogeneous (disadvantages)
 		//1. new keyword
 		//2. array literals
@@ -76,9 +76,9 @@ public class ArraysConcept {
 		//char array:
 		System.out.println("*********************************************");
 		char ch[]=new char[3]; //0-2
-//		ch[0]='a';
-//		ch[1]='b';
-//		ch[2]='c';
+			//		ch[0]='a';
+			//		ch[1]='b';
+			//		ch[2]='c';
 		System.out.println(Arrays.toString(ch));
 		
 		
@@ -90,6 +90,7 @@ public class ArraysConcept {
 		fg[0]=true;
 		fg[1]=false;
 		System.out.println(Arrays.toString(fg));
+		
 		/*Default value*/
 		//int,short, byte, long: 0
 		//double,float : 0
@@ -98,6 +99,33 @@ public class ArraysConcept {
 		
 		/*Use Case*/
 		//Gender, Month, Week
+		
+		
+		
+		
+		//String array
+		String browser[]=new String[4];
+		System.out.println(Arrays.toString(browser)); // null
+		browser[0]="chrome";
+		browser[1]="chrome";
+		browser[2]="chrome";
+		browser[3]="chrome";
+		
+		System.out.println(Arrays.toString(browser));
+		
+		//
+		// n --> n/2
+		/*  n/4  */
+		
+		//n/k; k=2 (Binary Search)
+		// T=N/K
+		//log T = log(n/k)
+		//log T = log n - log k; base k=2
+		//log T= log n - 1
+		//log T = log n
+		// T= log n // with the base T
+		// T=0(log n)
+		
 	}
 
 }

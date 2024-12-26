@@ -147,7 +147,7 @@ public class TypeCasting {
 		System.out.println(Integer.MAX_VALUE);//2147483647
 		//2147483647 + 1 = 2147483648
 		int x = Integer.MAX_VALUE + 3;//2147483647
-		System.out.println(x+1);//2147483648	
+		System.out.println(x+1);//-2147483645	
 		System.out.println("*******************************");
 		
 		
@@ -159,7 +159,7 @@ public class TypeCasting {
 		System.out.println(test*8);	
 		System.out.println("*******************************");
 		
-		byte a1=1;
+		byte a1=65;
 		char b8=(char)a1;
 		System.out.println(b8);
 		System.out.println("*******************************");
