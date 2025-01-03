@@ -14,13 +14,13 @@ public class Employee {
 		// Class : Category, Blueprint , template 
 		// Object : physical entity
 
-		//class: data members [variable,method] 
+		// Class: data members [variable,method] 
 		
 		//create the object of the class : using new keyword
 		
 		Employee e = new Employee(); //**Very Important Question**
 		//Employee --> 			class name
-		//e --> 				object reference name
+		//e --> 				object reference name or name of the object
 		//new Employee(); --> 	object 
 		
 		System.out.println(e.name + " " + e.age);
