@@ -33,8 +33,43 @@ public class Browser {
 		}
 
 	}
+	
+	
+	
+	
+	
+	
+	public boolean intiBrowser(String browserName) {
+		System.out.println("checking the browser...." + browserName);
+		
+		boolean flag = true; //local variable in stack memory
+		
+		switch(browserName.trim().toLowerCase()) {
+		case "chrome":
+			System.out.println("launch chrome");
+			break;
+		case "firefox":
+			System.out.println("launch ff");
+			break;	
+		case "edge":
+			System.out.println("launch edge");
+			break;
+		default:
+			System.out.println("browser is not found.." + browserName);
+			flag=false;
+			break;
+		}	
+		return flag;
+	}
+	
+
 	public static void main(String[] args) {
 		Browser br=new Browser();
+
+		boolean fg=br.intiBrowser("opera");
+		System.out.println(fg); //false
+		
+		
 		boolean flag=br.launchBrowser(" chrome ");
 		
 		if(flag) {

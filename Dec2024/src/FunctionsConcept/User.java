@@ -4,11 +4,11 @@ public class User {
 	//function/method -- non static -- data member of the class
 	
 	//function will have its own body in the class
-	//I can not create a function inside another function
+	//I can not create a function inside another function (very important question)
 	//but I can call the function from another function
 	
 	//1. no input and no return
-			//void -- no return: can not return anything
+	//void -- no return: can not return anything
 	public void test() { //function name should start with small letter
 		System.out.println("test method");
 	}
