@@ -9,6 +9,7 @@ public class LaunchBrowsers {
 		double ChromeVersion1 = 10.1;
 		double ChromeVersion2 = 10.2;
 		double ChromeVersion3 = 10.3;
+		
 		switch (browser.toLowerCase().trim()) {
 		case "chrome":
 			if(ChromeVersion1>=ChromeVersion2) {
@@ -24,6 +25,7 @@ public class LaunchBrowsers {
 			//break;
 			}
 		break;	
+		
 		case "firefox":
 			if (browserVersion==11.4) {
 				System.out.println("launch firefox");
