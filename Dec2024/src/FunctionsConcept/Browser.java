@@ -1,12 +1,12 @@
 package FunctionsConcept;
 
 public class Browser {
-	//Acceptance criteria 
+	// Acceptance criteria 
 	// launch a browser
 	// function name : launchBrowser (String browserName) : ch/ff/safari/edge
-	//return : true/false: boolean 
+	// return : true/false: boolean 
 	// ch/ff/safari/edge : print a message and return true
-	//ie: print an erroe message and return false
+	// ie: print an erroe message and return false
 	
 	public boolean launchBrowser(String browserName) {
 		System.out.println("checking the browser...." + browserName);
@@ -33,10 +33,6 @@ public class Browser {
 		}
 
 	}
-	
-	
-	
-	
 	
 	
 	public boolean intiBrowser(String browserName) {

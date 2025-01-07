@@ -11,15 +11,27 @@ public class Car {
 	//2. static variables/class variables: will never be part of the object
 	//JVM will create only one common copy for the static variables
 	//CMA: Common Memory Allocation/Permanent Generation --->Metaspace
-	static final int wheels =4;
+	static  int wheels =4;
 	//final static int wheels =4;
 	
 	public static void main(String[] args) {
+		
+		final int days = 7; //local var
+		int salary = days*100;
+		System.out.println(salary);
+		
+		final String color; //local var
+		//local vars: static is not allowed, but final is allowed
+		
+
+		System.out.println("u2=u3");
 		
 		Car c1=new Car();
 		c1.name = "BMW";
 		c1.price = 25;
 		c1.licenseNumber="Honda1234";
+	
+		
 		
 		//how to access static variables:
 		//1. use it directly:

@@ -11,6 +11,8 @@ public class Employee {
 	//4. return  type does not matter
 	//5. method body (total lines of code) doesn't matters
 	
+	
+	
 	public void test(int a) { //1 param
 		System.out.println("test method1");
 	}
@@ -105,9 +107,29 @@ public class Employee {
 		
 	}
 	
+	//interview questions
+	public void yum(byte a) {
+		System.out.println("hi byte");
+	}
+	public void yum(short a) {
+		System.out.println("hi byte");
+	}
+	public void yum(int a) {
+		System.out.println("hi byte");
+	}
+	public void yum(long a) {
+		System.out.println("hi byte");
+	}
+	
 	
 	public static void main(String[] args) {
 		Employee e1=new Employee();
+		
+		
+		e1.yum(10);
+		e1.yum(10L);
+		e1.yum((short)10);
+		
 		e1.test(10);
 		e1.test(100,"naveen"); //call by value
 
