@@ -1,4 +1,7 @@
 package ClassandObjects;
+
+import java.util.ArrayList;
+
 /*   Assignment 1
  * 	 Create two student objects and initialize their properties
  * 	 Print the details of each student and the total number of students.
@@ -39,8 +42,6 @@ public class assignmentOne {
 		s2.DOB="10-11-2010";
 		s2.gender='M';
 		totalStudent++;
-		
-		
-		
+	
 	}
 }
