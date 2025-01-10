@@ -16,17 +16,13 @@ public class program5 {
 			return false;
 		}
 	}
-
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		program5 p5=new program5();
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the number : ");
 		int i=sc.nextInt();
 		
 		boolean prg=p5.result(i);
-		System.out.println(prg);
-		
-		
+		System.out.println(prg);	
 		}
 }
