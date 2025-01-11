@@ -37,7 +37,7 @@ public class UserObjectReferenceExample {
 		System.out.println(UserThree.name + " " + UserThree.age + " " + UserThree.DOB + " " + UserThree.gender );
 		System.out.println(UserFour.name + " " + UserFour.age + " " + UserFour.DOB + " " + UserFour.gender );
 		
-		System.out.println("**UserOne=UserTwo*");
+		System.out.println("*******UserOne=UserTwo**********");
 		UserOne=UserTwo;
 		
 		System.out.println(UserOne.name + " " + UserOne.age + " " + UserOne.DOB + " " + UserOne.gender );
@@ -45,7 +45,7 @@ public class UserObjectReferenceExample {
 		System.out.println(UserThree.name + " " + UserThree.age + " " + UserThree.DOB + " " + UserThree.gender );
 		System.out.println(UserFour.name + " " + UserFour.age + " " + UserFour.DOB + " " + UserFour.gender );
 		
-		System.out.println("*UserTwo=UserThree*");
+		System.out.println("********UserTwo=UserThree********");
 		UserTwo=UserThree;
 		System.out.println(UserOne.name + " " + UserOne.age + " " + UserOne.DOB + " " + UserOne.gender );
 		System.out.println(UserTwo.name + " " + UserTwo.age + " " + UserTwo.DOB + " " + UserTwo.gender );
@@ -53,14 +53,14 @@ public class UserObjectReferenceExample {
 		System.out.println(UserFour.name + " " + UserFour.age + " " + UserFour.DOB + " " + UserFour.gender );
 		
 		
-		System.out.println("*UserThree=UserFour*");
+		System.out.println("********UserThree=UserFour********");
 		UserThree=UserFour;
 		System.out.println(UserOne.name + " " + UserOne.age + " " + UserOne.DOB + " " + UserOne.gender );
 		System.out.println(UserTwo.name + " " + UserTwo.age + " " + UserTwo.DOB + " " + UserTwo.gender );
 		System.out.println(UserThree.name + " " + UserThree.age + " " + UserThree.DOB + " " + UserThree.gender );
 		System.out.println(UserFour.name + " " + UserFour.age + " " + UserFour.DOB + " " + UserFour.gender );
 		
-		System.out.println("*UserFour=UserOne*");
+		System.out.println("********UserFour=UserOne********");
 		UserFour=UserOne;
 		System.out.println(UserOne.name + " " + UserOne.age + " " + UserOne.DOB + " " + UserOne.gender );
 		System.out.println(UserTwo.name + " " + UserTwo.age + " " + UserTwo.DOB + " " + UserTwo.gender );
