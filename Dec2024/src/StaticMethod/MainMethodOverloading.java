@@ -15,7 +15,7 @@ public class MainMethodOverloading {
 	//PSVM(String [])
 	public static void main(String a[]) {
 		System.out.println("hello testing");
-
+		MainMethodOverloading.main(10);
 	}
 	
 	public static void main(String a[],String b[]) {

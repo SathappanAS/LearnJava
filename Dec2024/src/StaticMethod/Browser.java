@@ -7,7 +7,7 @@ public class Browser {
 	}
 	
 	public static void init(int a) {
-			
+		System.out.println(a);	
 		}
 	
 	public static void init(int a,int b) {
@@ -15,7 +15,8 @@ public class Browser {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Browser.init(10);
+		
 
 	}
 

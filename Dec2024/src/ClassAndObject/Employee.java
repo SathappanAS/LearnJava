@@ -1,14 +1,11 @@
 package ClassAndObject;
-
 public class Employee {
-
 	//class variable{template variable or global variable}, data member
 	String name;
 	int age;
 	double salary;
 	boolean isPermanent;
 	char gender;
-	
 	
 	public static void main(String[] args) {
 		// Class : Category, Blueprint , template 
@@ -49,11 +46,7 @@ public class Employee {
 		obj =null;
 		obj.name="lias";
 		System.out.println(obj.name); //Java.lang.NullPointerException
-		
-		
 		//gc
 		System.gc(); //calling the GC 	
-		
 	}
-
 }

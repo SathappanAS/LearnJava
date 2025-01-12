@@ -12,7 +12,7 @@ public class Testing {
 	//we will never the buss logic in the main
 	public static void main(String[] test) {
 		System.out.println("hello world");
-		System.out.println(test[0]);//black of lenght of array
+		System.out.println(test[0]);//black of length of array
 		//return 100;
 	}
 	

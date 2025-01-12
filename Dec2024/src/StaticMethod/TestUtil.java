@@ -1,5 +1,4 @@
 package StaticMethod;
-
 public class TestUtil {
 
 	public static void writeFile() {
@@ -20,8 +19,7 @@ public class TestUtil {
 	
 	public static void displayLogo() {
 		System.out.println("logo.jpg");
-	}
-	
+	}	
 	//human class:
 	//static run();
 }
