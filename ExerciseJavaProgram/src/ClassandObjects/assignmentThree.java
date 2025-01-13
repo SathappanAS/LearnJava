@@ -59,10 +59,7 @@ public class assignmentThree {
 		System.out.println(car1.brand + "  " + car1.model + "  " + car1.year);
 		System.out.println(car2.brand + "  " + car2.model + "  " + car2.year);
 		System.out.println(car3.brand + "  " + car3.model + "  " + car3.year);
-		System.out.println(car4.brand + "  " + car4.model + "  " + car4.year);
-		
-		
-		
+		System.out.println(car4.brand + "  " + car4.model + "  " + car4.year);	
 		
 	}
 

@@ -17,7 +17,5 @@ public class programTwo {
 		programTwo p2=new programTwo();
 		int sum=p2.add(10, 10);
 		System.out.println(sum);
-
 	}
-
 }
