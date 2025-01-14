@@ -4,9 +4,24 @@ package methodAssignmentMore;
 /*Signature: public boolean compareStrings(String str1,String str2)*/
 public class programThree {
 
+	public boolean compareStrings(String str1 , String str2) {
+		if(str1.equalsIgnoreCase(str2)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		}
+		
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		programThree p3=new programThree();
+		boolean result = p3.compareStrings("testing", "TesTing");
+		System.out.println(result);
+		
+		programThree p4=new programThree();
+		boolean resultOne = p4.compareStrings("test", "TesTing");
+		System.out.println(resultOne);
 	}
 
 }
