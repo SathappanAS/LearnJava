@@ -45,9 +45,10 @@ public class Browser {
 		br.m1();
 
 		//NS --- NS : direct calling
-		//s---s : Direct calling or class name
-		//NS-S : direct calling or class name
-		//S-NS: Have to use object reference (call by reference)
+		//S -- S: Direct calling or class name
+		//NS --> S: Direct calling or class name
+		//S--> NS: have to use object reference: call by ref
+
 		
 	}
 
