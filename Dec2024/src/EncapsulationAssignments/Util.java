@@ -6,7 +6,6 @@ public class Util {
 			
 		}
 
-
 		public static void checkVersion() {
 			System.out.println("check browser version");
 		}
