@@ -50,8 +50,5 @@ public class Employee {
 		
 //		double newSalary = test.salary+(test.salary*0.10);
 //		System.out.println(newSalary);
-		
-
 	}
-
 }
