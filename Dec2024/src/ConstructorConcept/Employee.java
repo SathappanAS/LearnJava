@@ -37,8 +37,6 @@ public class Employee {
 		Employee e1=new Employee(10);
 		Employee e2=new Employee();
 		Employee e3=new Employee(100, "Selenium");
-		Employee e4=new Employee("Selenium", 100);
-		
+		Employee e4=new Employee("Selenium", 100);	
 	}
-
 }
