@@ -1,6 +1,6 @@
 package OOP_Interface;
 
-public interface IndianMedical {
+public interface IndianMedical  extends WHO {
 
 	public void radioServices();
 	

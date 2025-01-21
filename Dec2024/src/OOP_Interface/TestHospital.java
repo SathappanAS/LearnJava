@@ -13,6 +13,9 @@ public class TestHospital {
 		fh.dentalServices();
 		fh.medialTraining();
 		fh.optTraining();
+		fh.medicalRD();
+		fh.CovidVaccine();
+		fh.medicalPolicy();
 		// USMedical us = new USMedical();
 		// Interface - can not create the object of the Interface
 		
@@ -29,7 +32,9 @@ public class TestHospital {
 		us.orthoServices();
 		us.physioServices();
 		us.emergencySercies();	
-		
+		us.CovidVaccine();
+		USMedical.billing();
+		us.medicalPolicy();
 		//down casting: NA
 		
 		System.out.println("------");
@@ -38,6 +43,25 @@ public class TestHospital {
 		uk.oncologyServices();
 		uk.pediaServices();
 		uk.emergencySercies();	
+		uk.CovidVaccine();
+		
+		
+		//interface to inteface casting, we can do (very popular interview question)
+		USMedical usa=new FortisHospital();
+		UKMedical ukm=(UKMedical)(usa); //screenshot in selenium ; javascript 
+		ukm.oncologyServices();
+		ukm.pediaServices();
+		ukm.CovidVaccine();
+		usa.dentalServices();
+		usa.entServices();
 
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }

@@ -1,6 +1,6 @@
 package OOP_Interface;
 
-public class FortisHospital implements USMedical, UKMedical, IndianMedical{
+public class FortisHospital extends Hospital implements USMedical, UKMedical, IndianMedical{
 
 	//india
 	@Override
@@ -74,8 +74,6 @@ public class FortisHospital implements USMedical, UKMedical, IndianMedical{
 		
 	}
 	
-	
-	
 	//individual method:
 	public void medialTraining() {
 		System.out.println("FH------medicalTraining");
@@ -86,5 +84,20 @@ public class FortisHospital implements USMedical, UKMedical, IndianMedical{
 		System.out.println("FH------optTraining");
 	}
 
+	//WHO
+	@Override
+	public void CovidVaccine() {
+		System.out.println("CovidVacccine");
+		
+	}
+
+	
+	@Override
+	public void medicalPolicy() {
+		System.out.println("FH-----medical policy");
+	}
+	
+	
+	
 	
 }
