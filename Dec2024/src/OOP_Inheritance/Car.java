@@ -5,6 +5,10 @@ public class Car extends Vehicle {
 
 	//method is declared with final keyword, can we override the final method. No
 	//interview question 
+	
+	public final void info() {
+		System.out.println("Car---info");
+	}
 	public void start() {
 		System.out.println("car ---- start");
 	}
@@ -28,13 +32,24 @@ public class Car extends Vehicle {
 		System.out.println("Car----billing");
 	}
 	
-	 
 	public static void taxation() {
 		System.out.println("Car----taxation");
 	}
 	
-	private void rating() {
+	
+	
+	
+	private void rating() {  //encapsulation
 		System.out.println("Car -- rating");
 	}
+	
+	public void r1() { //encapsulation
+		rating();
+	}
 		
+
+	public void carRating() {
+		rating();
+	}
+	
 }

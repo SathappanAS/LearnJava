@@ -14,7 +14,7 @@ public class CarTest {
 		BMW.billing();
 		BMW.taxation(); //inherited static method //interview question
 		Car.taxation();
-		
+		b.r1(); //encapsulation
 		/**/
 		
 		System.out.println("-----------------------");
@@ -37,6 +37,8 @@ public class CarTest {
 		// c.autoParking(); Parent can't take anything from child class (Multiple inheritance (Diamond Problem)
 		
 		
+		
+	
 		
 		
 	}
