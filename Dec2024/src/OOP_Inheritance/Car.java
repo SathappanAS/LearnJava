@@ -3,7 +3,7 @@ package OOP_Inheritance;
 //final class -- can not be a parent: preventing inheritance / no extends
 public class Car extends Vehicle {
 
-	//method is declared with final keyword, can we override the final method. No
+	//method is declared with final keyword, can we override the final method? No
 	//interview question 
 	
 	public final void info() {
