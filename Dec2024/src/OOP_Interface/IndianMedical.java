@@ -1,13 +1,13 @@
 package OOP_Interface;
 
-public interface IndianMedical  extends WHO {
+public interface IndianMedical   {
 
-	public void radioServices();
-	
 	public void opticalServices();
+	
+	public void radioServices();
 	
 	public void cardioServices();
 	
-	public void emergencySercies();
+	public void emergencyServices();
 	
 }

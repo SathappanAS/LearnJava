@@ -1,11 +1,11 @@
 package OOP_Interface;
 
-public interface UKMedical  extends WHO{
+public interface UKMedical {
 	
 	public void oncologyServices();
 	
 	public void pediaServices();
-	
-	public void emergencySercies();
 
+	public void emergencyServices();
+	
 }

@@ -4,64 +4,55 @@ public class TestHospital {
 
 	public static void main(String[] args) {
 	
-		FortisHospital fh= new FortisHospital();
-		fh.cardioServices();
-		fh.entServices();
-		fh.pediaServices();
-		fh.physioServices();
-		fh.emergencySercies();
+		FortisHospital fh=new FortisHospital();
 		fh.dentalServices();
-		fh.medialTraining();
-		fh.optTraining();
-		fh.medicalRD();
-		fh.CovidVaccine();
-		fh.medicalPolicy();
-		// USMedical us = new USMedical();
-		// Interface - can not create the object of the Interface
+		fh.entServices();
+		fh.physioServices();
+		fh.orthoServices();
 		
-		System.out.println("   ");
-		System.out.println("---------Top Casting--------------");
-		System.out.println("   ");
+		fh.oncologyServices();
+		fh.pediaServices();
 		
-	
-		//top casting:
-		//child class object can be referred by parent interface ref variable: Yes
-		USMedical us = new FortisHospital();
+		fh.opticalServices();
+		fh.radioServices();
+		fh.cardioServices();
+		
+		fh.emergencyServices();
+		
+		fh.medicalTraining();
+		fh.optServices();
+		
+//Java will not allow to create interface object creation - Because interface will have  only method body(i.e abstract)
+//EXAMPLE : USMedical us=new USMedical();
+		
+		/*Top Casting*/
+		/*child class object can be referred by parent interface reference variable : Yes*/
+		/*Selenium = webDrive a= new ChromeDriver();*/
+		System.out.println();
+		System.out.println("---Top/Up Casting-----");
+		System.out.println();
+		USMedical us=new FortisHospital();
 		us.dentalServices();
 		us.entServices();
-		us.orthoServices();
 		us.physioServices();
-		us.emergencySercies();	
-		us.CovidVaccine();
-		USMedical.billing();
-		us.medicalPolicy();
-		//down casting: NA
+		us.orthoServices();
 		
-		System.out.println("------");
+		//us.oncologyServices(); - Reference type check will fail
+		//us.medicalTraining(); - Individual method of FortisHospital will be failed by reference type check
 		
-		UKMedical uk = new FortisHospital();
+		
+		us.emergencyServices();
+		
+		/*DownCasting*/ // We can even create parent of object creation : NOT Applicable
+		
+		System.out.println();
+		System.out.println("---Top/Up Casting-----");
+		System.out.println();
+		
+		UKMedical uk=new FortisHospital();
 		uk.oncologyServices();
 		uk.pediaServices();
-		uk.emergencySercies();	
-		uk.CovidVaccine();
-		
-		
-		//interface to inteface casting, we can do (very popular interview question)
-		USMedical usa=new FortisHospital();
-		UKMedical ukm=(UKMedical)(usa); //screenshot in selenium ; javascript 
-		ukm.oncologyServices();
-		ukm.pediaServices();
-		ukm.CovidVaccine();
-		usa.dentalServices();
-		usa.entServices();
-
-		
-		
-		
-		
-		
-		
-		
+		uk.emergencyServices();
 		
 	}
 }
