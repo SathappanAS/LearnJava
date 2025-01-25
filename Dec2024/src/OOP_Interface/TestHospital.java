@@ -24,6 +24,8 @@ public class TestHospital {
 		
 		fh.CovidVaccination();
 		
+		fh.medicalPolicy();
+		
 //Java will not allow to create interface object creation - Because interface will have  only method body(i.e abstract)
 //EXAMPLE : USMedical us=new USMedical();
 		
@@ -39,6 +41,8 @@ public class TestHospital {
 		us.physioServices();
 		us.orthoServices();
 		us.CovidVaccination();
+		USMedical.billing();
+		FortisHospital.billing();
 		
 		//us.oncologyServices(); - Reference type check will fail
 		//us.medicalTraining(); - Individual method of FortisHospital will be failed by reference type check
@@ -71,6 +75,9 @@ public class TestHospital {
 		/*Here we are typecasting the reference varaible not object*/
 		ukm.oncologyServices();
 		ukm.pediaServices();	
+		usa.dentalServices();
+		usa.physioServices();
+		
 		
 	}
 }

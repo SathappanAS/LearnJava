@@ -86,5 +86,15 @@ public class FortisHospital extends Hospital implements USMedical, UKMedical,Ind
 		// TODO Auto-generated method stub
 		
 	}
+	
+	//method hiding
+	public static void billing() {
+		System.out.println("USM--billing");
+	}
+	
+	@Override
+	public void medicalPolicy() { //public need to be used
+	System.out.println("fortisHospital--medical policy");
+	}
 
 }
