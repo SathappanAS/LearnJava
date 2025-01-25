@@ -1,6 +1,6 @@
 package OOP_Interface;
 
-public interface USMedical {
+public interface USMedical extends WHO{
 	
 	//abstract method:
 	//no method body, only method declaration

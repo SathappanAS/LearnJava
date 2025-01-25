@@ -22,6 +22,8 @@ public class TestHospital {
 		fh.medicalTraining();
 		fh.optServices();
 		
+		fh.CovidVaccination();
+		
 //Java will not allow to create interface object creation - Because interface will have  only method body(i.e abstract)
 //EXAMPLE : USMedical us=new USMedical();
 		
@@ -36,6 +38,7 @@ public class TestHospital {
 		us.entServices();
 		us.physioServices();
 		us.orthoServices();
+		us.CovidVaccination();
 		
 		//us.oncologyServices(); - Reference type check will fail
 		//us.medicalTraining(); - Individual method of FortisHospital will be failed by reference type check
@@ -54,5 +57,26 @@ public class TestHospital {
 		uk.pediaServices();
 		uk.emergencyServices();
 		
+		
+		System.out.println();
+		System.out.println("---Top/Up Casting-----");
+		System.out.println();
+		
+		
+		//interface to interface casting:
+		/*very important question*/
+		/*Screenshot and JavaScriptExecutor*/
+		USMedical usa=new FortisHospital(); //usa is reference variable of USMedical
+		UKMedical ukm=(UKMedical)(usa); //usa reference varaible is convered into UK. Enter RHS will be UNmedical
+		/*Here we are typecasting the reference varaible not object*/
+		ukm.oncologyServices();
+		ukm.pediaServices();	
+		
 	}
 }
+
+
+//class to class = extends keyword
+//class to interface = implements
+//interfact to interface = extends
+//one interface can have parent class (I:C) ---> Not application/Not allowed (very importanve questions)
