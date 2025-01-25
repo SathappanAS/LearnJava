@@ -2,7 +2,11 @@ package OOP_Interface;
 
 public interface USMedical extends WHO{
 	
-	//abstract method:
+	
+	//interface vars are by defauly static and final in nature
+	int min_fee=10;
+	
+	//NS: abstract method:
 	//no method body, only method declaration
 	//only method prototype
 	//can not create the object of the Interface
@@ -19,6 +23,16 @@ public interface USMedical extends WHO{
 	
 	public void orthoServices();
 	
+	//private void test(); NA 
+	
+	//can have private method : yes : but can not be overridden
+	private void budget() {
+		System.out.println("USM--budget");
+	}
+	
+//	public void approvBudget() {
+//		
+//	}
 	
 	//after JDK1.8, TWO Major changes:
 	
@@ -29,10 +43,15 @@ public interface USMedical extends WHO{
 	}
 	
 	//2. default method with body : not a static and not a abstract
+	// default keyword is only for interface
 	//can be overrideen
 	default void medicalPolicy() { //keyword default is onlt for interface
 		System.out.println("USM--medical policy");
+		 budget(); //encapsulation
 	}
+	
+	//TestNG Listner are full of default method 
+	//
 	
 	
 }

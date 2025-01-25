@@ -43,6 +43,13 @@ public class TestHospital {
 		us.CovidVaccination();
 		USMedical.billing();
 		FortisHospital.billing();
+		fh.medicalPolicy();
+		
+		
+		System.out.println(USMedical.min_fee);
+		System.out.println(FortisHospital.min_fee); //variable can be accessed with class name and varianle name
+		
+		//USMedical.min_fee=100;
 		
 		//us.oncologyServices(); - Reference type check will fail
 		//us.medicalTraining(); - Individual method of FortisHospital will be failed by reference type check

@@ -4,6 +4,9 @@ public class FortisHospital extends Hospital implements USMedical, UKMedical,Ind
 	/*The type FortisHospital must implement the inherited abstract method */
 	
 	//US
+	
+	static final int min_fee=100;
+	
 	@Override
 	public void dentalServices() {
 		System.out.println("FH--------dentalServices");
