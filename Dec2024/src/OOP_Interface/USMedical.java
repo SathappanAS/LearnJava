@@ -10,6 +10,7 @@ public interface USMedical extends WHO{
 	//no method body, only method declaration
 	//only method prototype
 	//can not create the object of the Interface
+	//100% abstraction 
 	
 	public void dentalServices();
 		
