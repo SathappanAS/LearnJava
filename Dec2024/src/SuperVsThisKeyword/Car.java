@@ -2,21 +2,20 @@ package SuperVsThisKeyword;
 
 public class Car {
 	
+	int min_speed=100;
 	
 	public Car() {
-		System.out.println("Car --- default cons...");
+		System.out.println("car--default const...");
 	}
 	
-	
 	public Car(int i) {
-		System.out.println("Car --- one Param cons..." + i);
+		System.out.println("car--one param const..." + " " +i);
 	}
 	
 	public Car(int i,int j) {
-		System.out.println("Car --- two Param cons..." + i + j);
+		this();
+		System.out.println("car--two param const..." + i + " " + j);
 	}
-
-	int min_speed=100;
 	
 	public void start() {
 		System.out.println("Car-----Start");
