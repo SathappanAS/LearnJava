@@ -24,10 +24,8 @@ public class TestCar {
 		 * */
 
 		//Super keyword used to call child class constructor
-		//this keywrod used to call this own constructor
-		
-		
-		
+		//this keyword used to call this own constructor
+	
 	}	
 
 }
