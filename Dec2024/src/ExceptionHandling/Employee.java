@@ -10,11 +10,18 @@ public class Employee {
 		System.out.println("A");
 		
 		try {
+			
+		int p[]=new int[2];
+		p[5]=100; //AIOB
+	
 		int i=9/0; 		/*Exception in thread "main" java.lang.ArithmeticException:*/ 
 		
 		Employee obj=new Employee();
 		obj =null;
 		obj.name="naveen"; //NullPointerException
+		//--
+		//--
+		//100
 		}
 		
 		catch(ArithmeticException e) {
@@ -23,6 +30,18 @@ public class Employee {
 		}
 		catch(NullPointerException e) {
 			System.out.println("NPE is coming....");
+			e.printStackTrace();
+		}
+		catch (RuntimeException e) {
+			System.out.println("some exception is coming");
+			e.printStackTrace();
+		}
+		catch (Exception e) {
+			System.out.println("some exception is coming");
+			e.printStackTrace();
+		}
+		catch (Throwable e) {
+			System.out.println("some exception is coming");
 			e.printStackTrace();
 		}
 		System.out.println("Bye");
