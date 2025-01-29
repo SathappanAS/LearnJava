@@ -23,10 +23,22 @@ public class TestData {
 		
 	}
 	
+	
+	public static void readExcelData() {
+		String data = null;
+		if (data==null) {
+			throw new TestDataException("data not available");
+		}
+	}
+	
 	public static void main(String[] args) {
 		
-		TestData.launchBrowser("naveen");
-		System.out.println("enter the url");
+		TestData.readExcelData();
+		System.out.println("enter test data in ui");
+		
+//		TestData.launchBrowser("naveen");
+//		System.out.println("enter the url");
+		
 		
 	}
 	
