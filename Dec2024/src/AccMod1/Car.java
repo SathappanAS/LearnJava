@@ -16,6 +16,10 @@ public class Car {
 	}
 	
 	
+	private void billing() {
+		System.out.println("car---billing");
+	}
+	
 	public String name;
 	int price; //default is only intergace
 	protected String color;
