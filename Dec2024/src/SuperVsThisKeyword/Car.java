@@ -1,8 +1,8 @@
 package SuperVsThisKeyword;
 
-public class Car {
+public class Car extends Vehicle {
 	
-	int min_speed=100;
+	//int min_speed=100;
 	
 	public Car() {
 		System.out.println("car--default const...");
@@ -26,3 +26,6 @@ public class Car {
 	}
 	
 }
+
+//super keyword will not create any memory in the heap like object
+//super keyword is one of the way to call the parent class method or variable

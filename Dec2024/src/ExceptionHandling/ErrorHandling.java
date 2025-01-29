@@ -11,7 +11,7 @@ public class ErrorHandling {
 		System.out.println("A");
 		
 		try {
-			ErrorHandling.test();
+			test();
 		} 
 		catch(Error e) {
 			System.out.println("Some error is coming");

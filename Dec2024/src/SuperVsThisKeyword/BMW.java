@@ -25,6 +25,7 @@ public class BMW extends Car {
 		System.out.println("BMW-----Start");
 		super.start(); //parent car method calling
 		stop();
+		
 	}
 	
 	public void displaySpeed() {
