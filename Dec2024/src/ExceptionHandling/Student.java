@@ -18,7 +18,7 @@ public class Student {
 					}
 					finally {
 						System.out.println("Hi");
-						return 65; 
+						//return 65; 
 					}
 			//Note : If you have written "return keyword" in the finally block , it return that value only
 		}
