@@ -31,6 +31,7 @@ public class StringMethods {
 		System.out.println(str.indexOf('i', 2)); //5 (Hot code value)
 		
 		System.out.println(str.indexOf('i', str.indexOf('i')+1));
+		
 		int position2= str.indexOf('i', str.indexOf('i')+1);
 		
 		//3rd position of i
