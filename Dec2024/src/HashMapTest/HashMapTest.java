@@ -52,11 +52,7 @@ public class HashMapTest {
 		
 		
 		
-		
-		
-		
-		
-		
+			
 		
 	}
 

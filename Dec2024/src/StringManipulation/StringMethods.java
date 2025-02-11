@@ -4,6 +4,7 @@ public class StringMethods {
 
 	public static void main(String[] args) {
 		
+		//String is the collection of multiple character 
 		String str="hi this is my java code and i am so happy";
 				  //0123456789------------------------------40//
 		System.out.println(str.length());  //41
