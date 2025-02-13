@@ -23,10 +23,10 @@ public class StringMethods {
 		
 		
 		int firstCharI = str.indexOf("i"); //1st occurence of i
-		System.out.println(firstCharI);
+		System.out.println(firstCharI); //1
 		
 		int secondCharI = str.indexOf("i", firstCharI+1); // 2nd occurance of i
-		System.out.println(secondCharI);
+		System.out.println(secondCharI); //5
 		
 		int thirdCharI = str.indexOf('i', secondCharI+1);
 		System.out.println(thirdCharI); // 3rd occurance of i
@@ -73,6 +73,25 @@ public class StringMethods {
 		System.out.println(t1.equals(t2)); //false
 		System.out.println(t1.equalsIgnoreCase(t2)); //true
 		
+		//substring
+		String orderMesg = "my order id is 12345";
+		System.out.println(orderMesg.substring(6));
+		System.out.println(orderMesg.substring(0,10));
+	
+		
+		int count = 0;
+        int index = 0;
+        
+        while (index < str.length()) {
+            if (str.charAt(index) == 'i') {
+            	 System.out.println("The letter 'i' occurs " + index + " times.");
+                count++;
+            }
+            index++;
+        }
+        
+ 
+       
 	}
 
 }
