@@ -7,6 +7,10 @@ public class FortisHospital extends Hospital implements USMedical, UKMedical,Ind
 	
 	static final int min_fee=100;
 	
+	public FortisHospital() {
+		super();
+	}
+	
 	@Override
 	public void dentalServices() {
 		System.out.println("FH--------dentalServices");
