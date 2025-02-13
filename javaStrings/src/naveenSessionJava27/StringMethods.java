@@ -56,6 +56,23 @@ public class StringMethods {
 		String mg = "hi this is my java code and i am so happy";
 		System.out.println(mg.replace("java", "Cypress"));
 
+		//contains:
+		String tg="hi this is my java code and i am so happy";
+		System.out.println(tg.contains("java")); //true
+		
+		String messg = "admin welcome";
+		if(messg.contains("admin")) {
+			System.out.println("PASS");
+		}else {
+			System.out.println("FAIL");
+		}
+		
+		//equals:
+		String t1 = "hello selenium";
+		String t2 = "hello Selenium";
+		System.out.println(t1.equals(t2)); //false
+		System.out.println(t1.equalsIgnoreCase(t2)); //true
+		
 	}
 
 }
