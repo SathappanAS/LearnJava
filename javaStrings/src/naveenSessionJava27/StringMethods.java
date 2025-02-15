@@ -16,9 +16,9 @@ public class StringMethods {
 		System.out.println("Lowest index of i: "+lowestIndex); //LowestIndex : 0
 	 
 		
-		System.out.println(str.charAt(11));
-		System.out.println(str.charAt(highestIndex));
-		System.out.println(str.charAt(lowestIndex));
+		System.out.println(str.charAt(11)); //m
+		System.out.println(str.charAt(highestIndex)); //y
+		System.out.println(str.charAt(lowestIndex)); //h
 		//System.out.println(str.charAt(highestIndex+1)); //java.lang.StringIndexOutOfBoundsException
 		
 		
@@ -79,18 +79,16 @@ public class StringMethods {
 		System.out.println(orderMesg.substring(0,10));
 	
 		
-		int count = 0;
+
         int index = 0;
         
         while (index < str.length()) {
             if (str.charAt(index) == 'i') {
-            	 System.out.println("The letter 'i' occurs " + index + " times.");
-                count++;
+            	 System.out.println("The letter 'i' occurs " + index + " times."); 
             }
             index++;
         }
-        
- 
+
        
 	}
 

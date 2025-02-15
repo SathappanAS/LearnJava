@@ -1,5 +1,7 @@
 package StringManipulation;
 
+import java.util.Arrays;
+
 public class StringMethods {
 
 	public static void main(String[] args) {
@@ -94,6 +96,67 @@ public class StringMethods {
 		else {
 			System.out.println("FAIL");
 		}
+		
+		
+		//substring:
+		String orderMesg = "my order id is 12345"; 
+		System.out.println(orderMesg.substring(6));
+		System.out.println(orderMesg.substring(0,10));
+		System.out.println(orderMesg.substring(orderMesg.indexOf("is")+2, orderMesg.length()));
+	
+		
+		//split: split the string into two parts
+		String lang = "java_python_ruby_javascript";
+		String lg[]=lang.split("_");
+		System.out.println(lg[0]); //java
+		System.out.println(Arrays.toString(lg)); // [java, python, ruby, javascript]
+		
+		
+		//
+		String top="xXtestXxXautomationXXxXseleniumxXapplicationX";
+		
+		String tp[]=top.split("xX");
+		
+		System.out.println(tp[0]); // EMPTY STRING
+		System.out.println(tp[0].length()); //0
+		System.out.println(tp[1]);
+		System.out.println(tp[2]);
+		System.out.println(tp[3]);
+		System.out.println(tp[4]);
+		
+		try {
+		System.out.println(tp[5]);//ArrayIndexOutOfBoundsException
+		}
+		catch(IndexOutOfBoundsException e){
+			System.out.println("ArrayIndexOutOfBoundsException");
+			//e.printStackTrace();
+		}
+		
+		System.out.println(Arrays.toString(tp));
+		
+		// 
+		String pop = "testing | automation | selenium | Loginpage";
+		String p[]=pop.split("\\|");
+			System.out.println(p[0].trim());
+			/* | is a or operator */
+			System.out.println("-----------");
+		System.out.println(Arrays.toString(p));
+		
+		//
+		String st = "testing.automation.selenium.Loginpage";
+		String sg[] = st.split("\\.");
+		System.out.println(sg[0]);
+		
+		//	
+		String myMsg="I love \"java\" language";
+		System.out.println(myMsg);
+		
+		String xpath="//input[@value=\"Login\"]";
+		System.out.println(xpath);
+		
+		
+		
 	}
+	
 
 }
