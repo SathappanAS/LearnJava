@@ -29,6 +29,18 @@ public class StringPool {
 	String s5=new String("testing");
 	
 	
+	String t1=new String("automation");
+	String t2="automation";
+	System.out.println(t1==t2); //false
+	System.out.println(t1.equals(t2)); //true
+	
+	String r1=null;
+	String r2=null;
+	
+	System.out.println(r1 == r2); //true
+	//System.out.println(r1.equals(r2)); //NPE
+	
+	
 	}
 
 }
