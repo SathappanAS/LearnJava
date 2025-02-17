@@ -1,7 +1,9 @@
 package StringManipulation;
 
 import java.util.Arrays;
-
+/**
+ * my testing stringmethiods
+ */
 public class StringMethods {
 
 	public static void main(String[] args) {
@@ -148,14 +150,23 @@ public class StringMethods {
 		System.out.println(sg[0]);
 		
 		//	
-		String myMsg="I love \"java\" language";
+		String myMsg="I love \"java\" language"; //(backslash)
 		System.out.println(myMsg);
 		
 		String xpath="//input[@value=\"Login\"]";
 		System.out.println(xpath);
 		
+		String testing = "I love 'coding' in Java";
+		System.out.println(testing);
+		
+		StringMethods.getScoreCard("ViratKohli");
 		
 		
+	}
+	//Interview Questions
+	public static void getScoreCard(String playerName) {
+		String xpath="//input[text()='"+playerName+"']";
+		System.out.println(xpath);
 	}
 	
 
