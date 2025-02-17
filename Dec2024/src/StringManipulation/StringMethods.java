@@ -133,8 +133,10 @@ public class StringMethods {
 			System.out.println("ArrayIndexOutOfBoundsException");
 			//e.printStackTrace();
 		}
-		
+		System.out.println("****----****----****");
 		System.out.println(Arrays.toString(tp));
+
+		System.out.println("****----****----****");
 		
 		// 
 		String pop = "testing | automation | selenium | Loginpage";
@@ -149,7 +151,7 @@ public class StringMethods {
 		String sg[] = st.split("\\.");
 		System.out.println(sg[0]);
 		
-		//	
+		//	interview question
 		String myMsg="I love \"java\" language"; //(backslash)
 		System.out.println(myMsg);
 		
