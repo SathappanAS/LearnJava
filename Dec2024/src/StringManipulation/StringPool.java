@@ -41,6 +41,40 @@ public class StringPool {
 	//System.out.println(r1.equals(r2)); //NPE
 	
 	
+	String p1=null;
+	if("naveen".equals(p1)) {
+		System.out.println("both are not equal");
 	}
-
+	
+//	if(p1.equals("naveen")) { //NPE
+//		
+//	}
+	
+	/*Very Important Question*/
+	String x="hello";
+	x.concat("automation");
+	System.out.println(x); //hello
+	
+	}
+	
+	//hi
+	//hi this
+	//hi this is naveen
+	
+//	//String Buffer and String bulider = non-immutable
+//	
+//	 StringBuilder sb = new StringBuilder("Selenium");
+//     sb.append("automation");
+//     System.out.println(sb);
+//	
+//	System.out.println("-----");
+//	
+//	String a= "abc";
+//	String b= "abc";
+//	System.out.println(a.concat(b));
+//	System.out.println(a);
+//	
+//	int i = 10;
+//	int j = 10;
+//	
 }
