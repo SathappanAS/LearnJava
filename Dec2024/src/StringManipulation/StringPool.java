@@ -55,7 +55,7 @@ public class StringPool {
 	x.concat("automation");
 	System.out.println(x); //hello
 	
-	}
+//	}
 	
 	//hi
 	//hi this
@@ -63,18 +63,18 @@ public class StringPool {
 	
 //	//String Buffer and String bulider = non-immutable
 //	
-//	 StringBuilder sb = new StringBuilder("Selenium");
-//     sb.append("automation");
-//     System.out.println(sb);
+	 StringBuilder sb = new StringBuilder("Selenium");
+     sb.append("automation");
+     System.out.println(sb);
+	
+	System.out.println("-----");
+	
+	String a= "abc";
+	String b= "abc";
+	System.out.println(a.concat(b));
+	System.out.println(a);
+	
+	int i = 10;
+	int j = 10;
 //	
-//	System.out.println("-----");
-//	
-//	String a= "abc";
-//	String b= "abc";
-//	System.out.println(a.concat(b));
-//	System.out.println(a);
-//	
-//	int i = 10;
-//	int j = 10;
-//	
-}
+}}
