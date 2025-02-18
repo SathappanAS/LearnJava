@@ -17,7 +17,7 @@ public class OpenCartAppTest {
 	    
 		URL url;
 		try {
-			url = new URL("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
+			url = new URL("naveenautomationlabs.com/opencart/index.php?route=account/login");
 			btUtil.launchURL(url);
 
 		} catch (MalformedURLException e) {

@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class BrowserUtil {	
-	WebDriver driver; //global variable
+	private WebDriver driver; //global variable
 	
 	/**
 	 * this is used to init the driver on the basis of given browser name : chrome,firefox, edge, safari
