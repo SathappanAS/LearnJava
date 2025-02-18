@@ -43,6 +43,7 @@ public class BrowserUtil {
 	//   https://www.google.com
 	// Method Overloading
 	public void launchURL(String url) {
+		nullCheck(url);
 		lenghtCheck(url);
 		httpCheck(url);
 		driver.get(url);
@@ -50,10 +51,39 @@ public class BrowserUtil {
 	
 	public void launchURL(URL url) {	
 		String appUrl = String.valueOf(url);
+		nullCheck(appUrl);
 		lenghtCheck(appUrl);
 		httpCheck(appUrl);
 		driver.get(appUrl);
 		// (or) driver.navigate().to(url);	
+	}
+	
+	
+	public String getPageTitle() {
+		String title=driver.getTitle();
+		System.out.println("page title is: "+ title);
+		return title;
+	}
+	
+	
+	public String getPageURL() {
+		String pageURL=driver.getCurrentUrl();
+		System.out.println("page title is: "+ pageURL);
+		return pageURL;
+	}
+	
+	public void closeBrowser() {
+		if(driver!=null) {
+			driver.close();
+			System.out.println("browser is closed");
+		}
+	}
+	
+	public void quitBrowser() {
+		if(driver!=null) {
+			driver.quit();
+			System.out.println("browser is closed");
+		}
 	}
 	
 	private void lenghtCheck(String value) {
@@ -65,27 +95,19 @@ public class BrowserUtil {
 	
 	private void httpCheck(String urlValue) {
 		if(urlValue.indexOf("http") !=0) {
-			System.out.println("http is missing in the url....");
+			System.out.println("http is missing in the url...." + urlValue);
 			throw new BrowserException("----http is missing-----");
 		}
 		
 	}
+
+
 	
-	
-	public String getPageTitle() {
-		String title=driver.getTitle();
-		System.out.println("page title is: "+ title);
-		return title;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	private void nullCheck(String value) {
+		if (value == null) {
+			System.out.println("value can not be null..." + value);
+			throw new BrowserException("===value is null===");
+		}}
 	
 	
 }
