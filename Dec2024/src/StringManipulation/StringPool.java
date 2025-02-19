@@ -28,7 +28,9 @@ public class StringPool {
 	
 	String s5=new String("testing");
 	
-	
+	String s6=new String("testing");
+	System.out.println("***********");
+	System.out.println(s5.equals(s6));
 	String t1=new String("automation");
 	String t2="automation";
 	System.out.println(t1==t2); //false
