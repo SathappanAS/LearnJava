@@ -22,6 +22,9 @@ public class WebElementConcept {
 		WebElement email=driver.findElement(By.id("input-email"));
 		WebElement password=driver.findElement(By.id("input-password"));
 		
+		email.sendKeys("tom@gmail.com");
+		password.sendKeys("tom@123");
+		
 		//3. By locator:
 		
 
