@@ -26,19 +26,31 @@ public class StringReverseConcept {
 		
 		return rev;
 	}
-	
-	
-
 	public static void main(String[] args) {
 		
-		String s1="selenium"; 
-		String res=StringReverseConcept.StringReverse(s1);
+		//Test Cases: With different data
+		String res=StringReverseConcept.StringReverse(""); //O(1) --BEST Case
 		System.out.println(res);
 		
+		res=StringReverseConcept.StringReverse("t"); //O(1)--BEST Case
+		System.out.println(res);
 		
+		res=StringReverseConcept.StringReverse(" "); //O(1)--BEST Case
+		System.out.println(res);
+		
+		res=StringReverseConcept.StringReverse("testing"); //O(n)--Worst Case
+		System.out.println(res);
+		
+		res=StringReverseConcept.StringReverse("1234"); //O(n)--Worst Case
+		System.out.println(res);
+		
+		res=StringReverseConcept.StringReverse("testing automation with selenium"); //O(n)--Worst Case
+		System.out.println(res);
+		
+		res=StringReverseConcept.StringReverse(null); //O(1)--BEST Case
+		System.out.println(res);
 		//		StringBuilder sb=new StringBuilder("selenium");
 		//		System.out.println(sb.reverse());
-
 
 	}
 
