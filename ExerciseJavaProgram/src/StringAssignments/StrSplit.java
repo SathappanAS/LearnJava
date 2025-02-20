@@ -17,7 +17,7 @@ public class StrSplit {
         }
 
         // Split the string into words
-        String words[] = str.split(" ");
+        String words[] = str.split(" "); //Split function always hold in arrays
         System.out.println("Lenght of the words " + words.length);
         String rev = "";
 
