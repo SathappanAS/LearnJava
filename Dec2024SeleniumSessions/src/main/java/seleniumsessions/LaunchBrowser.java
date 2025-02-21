@@ -9,9 +9,10 @@ public class LaunchBrowser {
 	public static void main(String[] args) {
 		
 		//launch browser: chrome
-		//ChromeDriver driver=new ChromeDriver();
+		//For chrome , we have Chromeclass - it is coming from selenium (import)
+		ChromeDriver driver=new ChromeDriver();
 		//FirefoxDriver driver=new FirefoxDriver();
-		EdgeDriver driver=new EdgeDriver();
+		//EdgeDriver driver=new EdgeDriver();
 		
 		//enter the url:
 		driver.get("https://www.google.com");
