@@ -35,9 +35,7 @@ public class OpenCartAppTest {
 	    else {
 	    	System.out.println("Title is not correct -- FAIL");
 	    }
-	    
-	    
-	    
+	   
 	    
 	    //
 	    String actUrl = btUtil.getPageURL();

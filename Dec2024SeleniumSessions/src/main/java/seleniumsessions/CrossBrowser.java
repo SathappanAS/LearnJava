@@ -8,10 +8,10 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class CrossBrowser {
 	
-	static WebDriver driver;//null
+	static WebDriver driver;//null //Create Webdrive reference variable 
 
 	public static void main(String[] args) {
-		
+		//WebDriver driver = new ChromeDriver(); WebDriver - Interface ; 
 		String browser = "chrome";
 		
 		switch(browser.trim().toLowerCase()) {
