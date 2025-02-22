@@ -14,24 +14,19 @@ public class NavigateURL {
 		WebDriver driver = new ChromeDriver();
 		WebDriver drivers = new FirefoxDriver();
 		
-		driver.get("https://www.google.com");
-		
+		driver.get("https://www.google.com"); //String
 		driver.navigate().to("https://www.amazon.com" );//string
 		driver.navigate().to(new URL("https://www.amazon.com"));//URL
-		
 			
 		driver.navigate().refresh();
 		
-		
 		URL baseUrl=new URL("https://www.flipkart.com");
 		driver.navigate().to(baseUrl);
-		
-		
+			
 		/* interview question
 		 * new ChromeDriver();
 		 * new ChromeDriver("https://www.google.com");
 		 * */
 
 	}
-
 }

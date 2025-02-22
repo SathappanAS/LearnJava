@@ -9,7 +9,11 @@ import org.openqa.selenium.chromium.*;
 
 public class LaunchTest {
 	public static void main(String[] args) {
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(); //session id : 123
+		driver = new ChromeDriver(); //session id : 456
+		driver = new ChromeDriver(); //session id : 789
+		driver.get("https://www.google.com"); //session id : 789
+		driver.quit(); //session 789 - third browser will be closed
 
 	}
 
