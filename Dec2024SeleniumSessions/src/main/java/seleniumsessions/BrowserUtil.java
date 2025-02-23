@@ -41,7 +41,7 @@ public class BrowserUtil {
 	}
 	
 	//   https://www.google.com
-	// Method Overloading
+	// 	 Method Overloading
 	public void launchURL(String url) {
 		nullCheck(url);
 		lenghtCheck(url);
@@ -80,11 +80,12 @@ public class BrowserUtil {
 	}
 	
 	public void quitBrowser() {
-		if(driver!=null) {
+		if (driver != null) {
 			driver.quit();
 			System.out.println("browser is closed");
 		}
 	}
+
 	
 	private void lenghtCheck(String value) {
 		if(value.length()==0) {
@@ -100,14 +101,10 @@ public class BrowserUtil {
 		}
 		
 	}
-
-
 	
 	private void nullCheck(String value) {
 		if (value == null) {
 			System.out.println("value can not be null..." + value);
 			throw new BrowserException("===value is null===");
 		}}
-	
-	
 }

@@ -17,7 +17,7 @@ public class OpenCartAppTest {
 	    
 		URL url;
 		try {
-			url = new URL("naveenautomationlabs.com/opencart/index.php?route=account/login");
+			url = new URL("https://naveenautomationlabs.com/opencart/index.php?route=account/login");
 			btUtil.launchURL(url);
 
 		} catch (MalformedURLException e) {
@@ -25,8 +25,7 @@ public class OpenCartAppTest {
 			e.printStackTrace();
 			throw new RuntimeException("http is mising");
 		}
-		
-	    
+
 	    //
 	    String actTitle=btUtil.getPageTitle();
 	    if(actTitle.equals("Account Login")) {
@@ -34,8 +33,6 @@ public class OpenCartAppTest {
 	    }
 	    else {
 	    	System.out.println("Title is not correct -- FAIL");
-	    }
-	   
 	    
 	    //
 	    String actUrl = btUtil.getPageURL();
@@ -44,11 +41,8 @@ public class OpenCartAppTest {
 		}
 		else {
 			System.out.println("login page url is correct -- FAIL");
-		}
-	    
-		btUtil.quitBrowser();
-	   
-	    
+		} 
+		
+		btUtil.quitBrowser();   
 	}
-
-}
+}}

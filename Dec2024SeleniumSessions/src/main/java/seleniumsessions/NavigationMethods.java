@@ -11,7 +11,6 @@ public class NavigationMethods {
 		driver.get("https://www.google.com");
 		//Synonym for org.openqa.selenium.WebDriver.Navigation.to(String).
 		
-		
 		System.out.println(driver.getTitle());
 
 		//navigate to the amazon.com
