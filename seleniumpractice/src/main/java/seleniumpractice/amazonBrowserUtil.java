@@ -12,7 +12,7 @@ public class amazonBrowserUtil {
 	private WebDriver driver;
 	
 	public WebDriver init(String browserName) {
-		System.out.println("Name of thhe Browser to launch the webSite : " + browserName);
+		System.out.println("Name of the Browser to launch the webSite : " + browserName);
 		
 		switch (browserName.trim().toLowerCase()) {
 		case "chrome":
@@ -60,9 +60,10 @@ public class amazonBrowserUtil {
 		return title1;
 	}
 	
-	public void getPageURL() {
+	public String getPageURL() {
 		String PageURL = driver.getCurrentUrl();
 		System.out.println("page URL is : " + PageURL);
+		return PageURL;
 	}
 	
 	public void closeBrowser() {

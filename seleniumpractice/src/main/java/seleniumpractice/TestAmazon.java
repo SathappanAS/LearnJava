@@ -14,8 +14,28 @@ public class TestAmazon {
 		WebDriver driver=test.init("chrome");
 		
 		test.launchURL("https://www.amazon.com/");
-		test.getPageTitle();
-		test.getPageURL();
+		
+		
+		String LaunchURL=test.getPageURL();
+		if(LaunchURL.equals("https://www.amazon.com/")) {
+			System.out.println("URL is correct===Pass");
+		}
+		else {
+			System.out.println("URL is not correct===Pass");
+		}
+	
+		
+		
+		String actTitle=test.getPageTitle();
+		if(actTitle.equals("Amazon.com. Spend less. Smile more.")) {
+			System.out.println("Title is correct===Pass");
+		}
+		else {
+			System.out.println("Title is not correct===fail");
+		}
+		
+		
+		
 		test.quidBrowser();
 
 	}
