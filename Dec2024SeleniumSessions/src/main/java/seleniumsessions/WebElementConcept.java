@@ -46,19 +46,29 @@ public class WebElementConcept {
 		//getElement(pwdField).sendKeys("tom@123");
 		
 		//5.  By locator + generic function to get the element and perform actions.
-				By emailField = By.id("input-email");
-				By pwdField= By.id("input-password");
+		//		By emailField = By.id("input-email");
+		//		By pwdField= By.id("input-password");
+		//				
+		//		doSendKeys(emailField,"tom@gmail.com");
+		//		doSendKeys(pwdField,"password");
 				
-				doSendKeys(emailField,"tom@gmail.com");
-				doSendKeys(pwdField,"password");
+		//6. By locator + generic function to get the element and perform action- ElementUtil
+		By emailField = By.id("input-email");
+		By pwdField= By.id("input-password");
+		
+		ElementUtil elUtil=new ElementUtil(driver);
+		elUtil.doSendKeys(emailField, "tom@gmail.com");
+		elUtil.doSendKeys(pwdField, "password");
+	
+		//7. BrUtil + eleUtil --->create a webElement(FE) + perform action(click,sendKeys, isDisplayed, getText..)
 		
 	}
 	
-	public static void doSendKeys(By locator,String value) {
-		getElement(locator).sendKeys(value);
-	}
-	
-	public static WebElement getElement(By locator) {
-		return driver.findElement(locator);
-	}
+		//	public static void doSendKeys(By locator,String value) {
+		//		getElement(locator).sendKeys(value);
+		//	}
+		//	
+		//	public static WebElement getElement(By locator) {
+		//		return driver.findElement(locator);
+		//	}
 }
