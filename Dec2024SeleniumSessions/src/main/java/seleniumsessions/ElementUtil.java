@@ -17,6 +17,10 @@ public class ElementUtil {
 		getElement(locator).sendKeys(value);
 	}
 	
+	public  void doClick(By locator) {
+		getElement(locator).click();
+	}
+	
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);
 	}
