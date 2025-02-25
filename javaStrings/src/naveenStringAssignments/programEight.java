@@ -7,6 +7,7 @@ public class programEight{
 		int index=0;
 		if(str.contains(searchStr))
 		{
+			System.out.println(str.length());
 			index=str.indexOf(searchStr);
 			return(index);
 		}
