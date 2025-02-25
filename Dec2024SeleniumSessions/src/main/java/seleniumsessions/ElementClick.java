@@ -31,6 +31,9 @@ public class ElementClick {
 		
 	}
 	
+	
+	
+	
 //	public static void doClick(By locator) {
 //		getElement(locator).click();
 //	}

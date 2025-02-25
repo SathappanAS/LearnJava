@@ -2,6 +2,7 @@ package seleniumsessions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LocatorsConcept {
@@ -46,10 +47,27 @@ public class LocatorsConcept {
 		//Forgotten Username
 		
 		//8. tagName:
-//		String header = driver.findElement(By.tagName("h2")).getText();
-//		System.out.println(header);
+		//		String header = driver.findElement(By.tagName("h2")).getText();
+		//		System.out.println(header);
 			
+		By header = By.tagName("h2");	
+		String actHeader = doElementGetText(header);
+		if(actHeader.equals("New Customer")) {
+			System.out.println("header is correct -- PASS");
+		}
 
 	}
+	
+	public static String doElementGetText(By locator) {
+		String eleText = getElement(locator).getText();
+		System.out.println("element text =>" + eleText);
+		return eleText;
+	}
+	
+	public static WebElement getElement(By locator) {
+		return driver.findElement(locator);
+	}
+		
+		
 
 }

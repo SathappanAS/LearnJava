@@ -21,6 +21,12 @@ public class ElementUtil {
 		getElement(locator).click();
 	}
 	
+	public String doElementGetText(By locator) {
+	String eleText = getElement(locator).getText();
+	System.out.println("element text =>" + eleText);
+	return eleText;
+}
+	
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);
 	}
