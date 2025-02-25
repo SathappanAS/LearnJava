@@ -1,17 +1,18 @@
 package seleniumpractice;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class TestAmazon {
 
 	public static void main(String[] args) {
+		WebDriver driver;
 		
 		amazonBrowserUtil test=new amazonBrowserUtil();
+		driver=test.init("chrome");
+		amazonElementUtil elUtil = new amazonElementUtil(driver);
 		
-		WebDriver driver=test.init("chrome");
+	
 		
 		test.launchURL("https://www.amazon.com/");
 		
@@ -35,6 +36,19 @@ public class TestAmazon {
 		}
 		
 		
+		
+		By amazonBasisElement = By.xpath("/html/body/div[1]/header/div/div[4]/div[2]/div/div/a[4]");
+		
+		String text=elUtil.doGetElementText(amazonBasisElement);
+		System.out.println("text of the amazonElement: " + text);
+		if(text.equals("Amazon Basics")) {
+			System.out.println("True");
+		}
+		else {
+			System.out.println("false");
+		}
+		
+		//System.out.println("text of the amazonElement: " + text);
 		
 		test.quidBrowser();
 
