@@ -25,7 +25,16 @@ public class ElementUtil {
 	String eleText = getElement(locator).getText();
 	System.out.println("element text =>" + eleText);
 	return eleText;
-}
+	}
+	
+	
+	public  String getElementDomAttributeValue(By locator,String attrName) {
+		return getElement(locator).getDomAttribute("attrName");
+	}
+	
+	public  String getElementDomPropertyValue(By locator,String propName) {
+		return getElement(locator).getDomProperty("propName");
+	} 
 	
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);
