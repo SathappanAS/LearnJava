@@ -1,5 +1,7 @@
 package seleniumsessions;
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,6 +50,18 @@ public class ElementUtil {
 		nullCheck(propName);
 		return getElement(locator).getDomProperty("propName");
 	} 
+	
+	public boolean isElementDisplayed(By locator) {
+		try {
+			return getElement(locator).isDisplayed();
+		} 
+		catch (NoSuchElementException e) {
+			System.out.println("element is not present on the page using : " + locator);
+			return false;
+		}
+	}
+		
+	
 	
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);
