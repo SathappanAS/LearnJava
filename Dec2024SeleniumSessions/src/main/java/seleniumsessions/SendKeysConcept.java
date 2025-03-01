@@ -13,16 +13,16 @@ public class SendKeysConcept {
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
 		
 		WebElement firstName = driver.findElement(By.id("input-firstname"));
+		WebElement lastName = driver.findElement(By.id("input-lastname"));
 		/*sendKeys method is coming from CharSequence*/
 		/*String, StringBuffer, StringBuilder*/
 		String FN = "Testing";
 		String LN = "Automation";
 		StringBuilder sb= new StringBuilder("selenium");
 		StringBuilder sbf= new StringBuilder("Learning");
-		firstName.sendKeys(FN, " " ,LN,sb,sbf);
-		//charsequence behaving like an array.....
-		driver.quit();
-		
+		firstName.sendKeys(FN, " " ,LN," ",sb," ",sbf);
+		//charsequence behaving like an array.....with ... value
+		lastName.sendKeys(null);//will not work keys to send should be a not null charSequence
+		driver.quit();	
 	}
-
 }

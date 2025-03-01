@@ -14,6 +14,9 @@ public class ElementUtil {
 	}
 	
 	public void doSendKeys(By locator,String value) {
+		if (value==null) {
+			throw new RuntimeException("===value ccan not be null====");
+		}
 		getElement(locator).sendKeys(value);
 	}
 	
