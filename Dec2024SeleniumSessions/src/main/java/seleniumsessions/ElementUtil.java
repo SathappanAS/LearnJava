@@ -12,11 +12,19 @@ public class ElementUtil {
 		//this.global = local varialble
 		this.driver=driver;
 	}
-	
-	public void doSendKeys(By locator,String value) {
-		if (value==null) {
-			throw new RuntimeException("===value ccan not be null====");
+	public void nullCheck(CharSequence...value) {
+		if(value==null) {
+			throw new RuntimeException("===value can not be null====");
 		}
+	}
+		
+	public void doSendKeys(By locator,String value) {
+		nullCheck();
+		getElement(locator).sendKeys(value);
+	}
+	
+	public void doSendKeys(By locator,CharSequence... value) {
+		nullCheck();
 		getElement(locator).sendKeys(value);
 	}
 	
@@ -32,10 +40,12 @@ public class ElementUtil {
 	
 	
 	public  String getElementDomAttributeValue(By locator,String attrName) {
+		nullCheck(attrName);
 		return getElement(locator).getDomAttribute("attrName");
 	}
 	
 	public  String getElementDomPropertyValue(By locator,String propName) {
+		nullCheck(propName);
 		return getElement(locator).getDomProperty("propName");
 	} 
 	
