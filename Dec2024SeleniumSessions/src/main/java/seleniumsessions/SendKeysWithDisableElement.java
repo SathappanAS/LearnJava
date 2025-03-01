@@ -5,22 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SendKeysWithDisableElement {
-
 	static WebDriver driver;
-
 	public static void main(String[] args)  {
-
 		driver = new ChromeDriver();
 		driver.get("https://seleniumpractise.blogspot.com/2016/09/how-to-work-with-disable-textbox-or.html");
-		
+		driver.findElement(By.id("pass")).sendKeys("testing");
+		/*Exception in thread "main" org.openqa.selenium.ElementNotInteractableException: element not interactable*/
 		WebElement password = driver.findElement(By.id("pass"));//this element is disabled
-
 		//password.sendKeys("testing");
 		//ElementNotInteractableException: element not interactable
 		
 		password.click();//click on disabled element: no exception
-		
-		
+		driver.quit();
 	}
 
 }
