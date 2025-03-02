@@ -1,8 +1,8 @@
 package seleniumsessions;
 import java.util.List;
-/*Very famous interview questions*/
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+/*Very famous interview questions*/
 /*How many links on the page and how many images on the page*/
 public class TotalLinks {
 
