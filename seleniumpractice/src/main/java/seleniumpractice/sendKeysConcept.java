@@ -25,7 +25,6 @@ static WebDriver driver;
 		driver.close();
 	}
 	
-	
 	public static void SendKeysCon(By locator,CharSequence... value) {
 		getElement(locator).sendKeys(value);
 	}
@@ -34,8 +33,5 @@ static WebDriver driver;
 	public static WebElement getElement(By locator) {
 		return driver.findElement(locator);
 	}
-	
-	
-	
 
 }

@@ -13,11 +13,13 @@ static WebDriver driver;
 		
 		driver = new ChromeDriver();
 		driver.get("https://naveenautomationlabs.com/opencart/index.php?route=account/register");
+		By firstnameBy = By.id("input-firstname");
 		
-		WebElement firstName=getElement(By.id("input-firstname"));
+		WebElement firstName=getElement(firstnameBy);
 		firstName.sendKeys("Sathappan");
 		
-		String firstNameResult=getDomPro(By.id("input-firstname"),"value");
+		
+		String firstNameResult=getDomPro(firstnameBy,"value");
 		System.out.println(firstNameResult);
 		
 		WebElement lastName = getElement(By.id("input-lastname"));
