@@ -1,5 +1,7 @@
 package seleniumsessions;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
@@ -62,9 +64,36 @@ public class ElementUtil {
 	}
 		
 	
-	
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);
 	}
+	
+	//***************find Elements Utils*********//
+	public  List<String> getElementTextList(By locator) {
+		List<WebElement> eleList = getElements(locator);
+		List<String> eleTextList = new ArrayList<String>(); //TopCasting //Physical capacity =0
+		//List - interface
+		
+		for ( WebElement e : eleList) {
+			String text=e.getText();
+			if(text.length()!=0) {
+				System.out.println(text);
+				eleTextList.add(text);
+			}}
+		return eleTextList;
+	}
+	
+	
+	public  int getElementsCount(By locator) {
+		int elecount=getElements(locator).size();
+		System.out.println("element count ==>" + elecount);
+		return elecount;
+	}
+	
+	
+	public  List<WebElement> getElements(By locator) {
+		return driver.findElements(locator);	
+	}
+	
 	
 }
