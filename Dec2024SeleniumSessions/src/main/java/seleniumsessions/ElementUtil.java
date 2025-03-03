@@ -115,7 +115,7 @@ public class ElementUtil {
 		for (WebElement e : eleList) {
 			String text = e.getText();
 			System.out.println(text);
-			if (text.equals(value)) {
+			if (text.contains(value)) {
 				e.click();
 				break;
 			}}}
