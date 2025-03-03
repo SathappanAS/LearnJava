@@ -93,10 +93,36 @@ public class ElementUtil {
 		return elecount;
 	}
 	
+	public  boolean checkElementDisplayed(By locator) {
+		if(getElements(locator).size()==1) {
+			System.out.println("element :" + locator + " is displayed on the page one time ");
+			return true;
+		}
+		return false;
+	}
+	
+	public  boolean checkElementDisplayed(By locator, int expElementCount) {
+		if(getElements(locator).size() == expElementCount) {
+			System.out.println("element : " + locator + " is displayed on the page "+ expElementCount + " times");
+			return true;
+		}
+		return false;
+	}
+	
+	public  void clickElement(By locator, String value) {
+		List<WebElement> eleList = getElements(locator);
+		System.out.println("total number of elements: " + eleList.size());
+		for (WebElement e : eleList) {
+			String text = e.getText();
+			System.out.println(text);
+			if (text.equals(value)) {
+				e.click();
+				break;
+			}}}
+	
 	
 	public List<WebElement> getElements(By locator) {
 		return driver.findElements(locator);	
 	}
-	
 	
 }
