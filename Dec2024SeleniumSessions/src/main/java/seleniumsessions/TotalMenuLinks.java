@@ -76,10 +76,5 @@ public class TotalMenuLinks {
 	public static List<WebElement> getElements(By locator) {
 		return driver.findElements(locator);	
 	}
-	
-	
-	
-	
-	
 
 }

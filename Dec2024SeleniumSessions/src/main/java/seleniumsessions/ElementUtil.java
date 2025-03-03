@@ -73,7 +73,10 @@ public class ElementUtil {
 		List<WebElement> eleList = getElements(locator);
 		List<String> eleTextList = new ArrayList<String>(); //TopCasting //Physical capacity =0
 		//List - interface
-		
+		//Top casting - child class object is referred by parent class interface
+		//Good pratice - always top cast with the interface 
+		//Physical capaciy(PC) = 0
+		//We can't use staticArray - Because we need to provide the size
 		for ( WebElement e : eleList) {
 			String text=e.getText();
 			if(text.length()!=0) {
@@ -91,7 +94,7 @@ public class ElementUtil {
 	}
 	
 	
-	public  List<WebElement> getElements(By locator) {
+	public List<WebElement> getElements(By locator) {
 		return driver.findElements(locator);	
 	}
 	
