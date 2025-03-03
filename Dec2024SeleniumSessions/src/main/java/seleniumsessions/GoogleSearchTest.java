@@ -21,7 +21,7 @@ public class GoogleSearchTest {
 			
 			driver.findElement(By.name("q")).sendKeys("Selenium Automation");
 			
-			Thread.sleep(3000);
+			Thread.sleep(3000); //HardWait {Thread-class; sleep:static method}
 			
 			List<WebElement> suggList = driver.findElements(By.xpath("//div[@class='wM6W7d']/span"));
 			
