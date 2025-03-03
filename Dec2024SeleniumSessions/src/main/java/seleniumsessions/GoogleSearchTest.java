@@ -38,4 +38,27 @@ public class GoogleSearchTest {
 
 	}
 
+		//
+		
+		public static void GoogleSuggList(By locator, String value, String value2) {
+			
+			driver.findElement(By.name("q")).sendKeys(value);
+			List<WebElement> suggList =  getElements(locator);
+			
+			
+			for(WebElement e : suggList) {
+				String text = e.getText();
+				System.out.println(text);
+					if(text.contains("value2")) {
+						e.click();
+						break;
+					}
+			}
+			
+		}
+		
+		
+		public static List<WebElement> getElements(By locator) {
+			return driver.findElements(locator);	
+		}
 }
