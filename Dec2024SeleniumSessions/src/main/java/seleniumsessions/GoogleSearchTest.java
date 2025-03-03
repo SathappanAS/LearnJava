@@ -19,37 +19,41 @@ public class GoogleSearchTest {
 			driver = new ChromeDriver();
 			driver.get("https://www.google.com/");
 			
-			driver.findElement(By.name("q")).sendKeys("Selenium Automation");
+//			driver.findElement(By.name("q")).sendKeys("Selenium Automation");
+//			
+//			Thread.sleep(3000); //HardWait {Thread-class; sleep:static method}
+//			
+//			List<WebElement> suggList = driver.findElements(By.xpath("//div[@class='wM6W7d']/span"));
+//			
+//			System.out.println(suggList.size());
+//			
+//			for(WebElement e : suggList) {
+//				String text = e.getText();
+//				System.out.println(text);
+//					if(text.contains("testing jobs")) {
+//						e.click();
+//						break;
+//					}
+//			}
 			
-			Thread.sleep(3000); //HardWait {Thread-class; sleep:static method}
+			By loc=By.xpath("//div[@class='wM6W7d']/span");
 			
-			List<WebElement> suggList = driver.findElements(By.xpath("//div[@class='wM6W7d']/span"));
-			
-			System.out.println(suggList.size());
-			
-			for(WebElement e : suggList) {
-				String text = e.getText();
-				System.out.println(text);
-					if(text.contains("testing jobs")) {
-						e.click();
-						break;
-					}
-			}
+			GoogleSuggList(loc,"Selenium Automation","jobs");
 
 	}
 
 		//
 		
-		public static void GoogleSuggList(By locator, String value, String value2) {
+		public static void GoogleSuggList(By locator, String value, String value2) throws InterruptedException {
 			
 			driver.findElement(By.name("q")).sendKeys(value);
+			Thread.sleep(3000);
 			List<WebElement> suggList =  getElements(locator);
-			
 			
 			for(WebElement e : suggList) {
 				String text = e.getText();
 				System.out.println(text);
-					if(text.contains("value2")) {
+					if(text.contains(value2)) {
 						e.click();
 						break;
 					}
