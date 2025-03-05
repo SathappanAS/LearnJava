@@ -1,8 +1,15 @@
 package seleniumsessions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.*;
 
 public class CustomXpath {
 
 	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		
 		//xpath : address of the element in the html DOM
 		//not an attribute
 		
@@ -68,7 +75,45 @@ public class CustomXpath {
 		//p[contains(text(),'shop faster')]
 		
 		
+		//htmltag[contains(@attr,value) and contains(text(),'value')]
+		//a[contains(@href,'account/order') and contains(text(),'Order')]
 		
+		//htmltag[contains(@attr1,'value') and @attr2='value']
+		//a[contains(@href,'account/recurring') and @class='list-group-item']
+				
+		//htmltag[contains(@attr1,'value') and @attr2='value' and contains(text(),'value')]
+		//a[contains(@href,'account/recurring') and @class='list-group-item' and contains(text(),'Recurring')]
+		//a[contains(@href,'?route=account/recurring') and @class='list-group-item' and contains(text(),'Recurring')]
+		
+		
+		//dynamic attributes/text:
+		//		<input id="first_123">
+		//		<input id="first_345">
+		//		<input id="first_678">
+		
+		By.id("first_123\"");//won't work
+		By.xpath("//input[contains(@id,'firstname_')]");
+		
+	
+		//<div>your order id is 12345</div>
+		By order = By.xpath("//a[contains(text(),'your order id is')]");
+		String orderText = driver.findElement(order).getText();
+		// orderText = your order id is 12345
+		
+		
+		//starts-with():
+		//htmltag[starts-with(@attr,'value')]
+		//input[starts-with(@placeholder,'E-Mail')]
+				
+		//htmltag[starts-with(text(),'value')]
+		//p[starts-with(text(),'By creating an account')]
+				
+				
+		//starts-with() and contains()
+		//htmltag[starts-with(text(),'value') and contains(@attr,'value')]
+		//a[starts-with(text(),'Recurring') and contains(@href,'?route=account/recurring')]
+				
+		//ends-with(): NA in xpath:
 		
 		
 	}
