@@ -32,5 +32,15 @@ public class ArrayListTest {
 		System.out.println(ar); // [100, 200, 300, 500]
 		System.out.println(ar.get(3)); //500
 		
+		//
+		ArrayList tr=new ArrayList(5); //VC=5;PC=0
+		
+		System.out.println(tr.size()); //0
+		System.out.println(tr); //[]
+		tr.add(100);
+		System.out.println(tr);//[100]
+		System.out.println(tr.size()); //1
+		
+		
 	}
 }
