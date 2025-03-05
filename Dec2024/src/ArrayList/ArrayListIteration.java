@@ -1,6 +1,9 @@
 package ArrayList;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
 
 public class ArrayListIteration {
 
@@ -66,6 +69,13 @@ public class ArrayListIteration {
 					//break;
 				}
 		}
+		
+		
+		//
+		List<String> dataList = new ArrayList<String>();
+		//Top casting with interface
+		dataList = new LinkedList<String>();
+		dataList = new Vector<String>();
 
 	}
 
