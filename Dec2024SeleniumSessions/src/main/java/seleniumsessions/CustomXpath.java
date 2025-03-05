@@ -43,7 +43,6 @@ public class CustomXpath {
 		//footer//h5
 		//footer//a
 				
-		
 		//text(): p, links, label, span, div , header h1 h2 h3
 		//htmltage[text()='value']
 		
@@ -100,15 +99,13 @@ public class CustomXpath {
 		String orderText = driver.findElement(order).getText();
 		// orderText = your order id is 12345
 		
-		
 		//starts-with():
 		//htmltag[starts-with(@attr,'value')]
 		//input[starts-with(@placeholder,'E-Mail')]
 				
 		//htmltag[starts-with(text(),'value')]
 		//p[starts-with(text(),'By creating an account')]
-				
-				
+					
 		//starts-with() and contains()
 		//htmltag[starts-with(text(),'value') and contains(@attr,'value')]
 		//a[starts-with(text(),'Recurring') and contains(@href,'?route=account/recurring')]
