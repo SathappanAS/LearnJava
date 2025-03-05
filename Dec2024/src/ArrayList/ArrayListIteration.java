@@ -76,6 +76,23 @@ public class ArrayListIteration {
 		//Top casting with interface
 		dataList = new LinkedList<String>();
 		dataList = new Vector<String>();
+		
+		System.out.println("================");
+		
+		StringBuilder sb1 = new StringBuilder("java");
+		StringBuilder sb2 = new StringBuilder("java");
+		StringBuffer sb3 = new StringBuffer("java");
+		
+		System.out.println(sb1.equals(sb2));//false
+		
+		System.out.println(sb1.toString().equals(sb2.toString()));//true
+		System.out.println(sb1.toString().equals(sb3.toString()));//true
+
+		System.out.println(sb1==sb2);//false
+		
+		String r1 = new String("java");
+		String r2 = new String("java");
+		System.out.println(r1.equals(r2));//true
 
 	}
 
