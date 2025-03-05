@@ -41,6 +41,28 @@ public class ArrayListTest {
 		System.out.println(tr);//[100]
 		System.out.println(tr.size()); //1
 		
+	    //	System.out.println(tr.get(2));  //IndexOutOfBoundsException
+		/*get() method always look for physical capacity PC*/
+		
+		
+//		tr.add(3,30);
+//		System.out.println(tr.get(3)); //IndexOutOfBoundsException
+		/*Note: We cannot skip any segement of the order */
+		/* We should always go with sequential mode/order */
+		
+		
+		ArrayList as=new ArrayList(5);
+		as.add(10); //0
+		as.add(20); //1
+		as.add(30); //2
+		as.add(40); //3
+		as.add(50); //4
+		
+		System.out.println(as); //[10, 20, 30, 40, 50]
+		as.add(1,25);
+		System.out.println(as); //[10, 25, 20, 30, 40, 50]
+		as.set(1, 11);
+		System.out.println(as); // [10, 11, 20, 30, 40, 50]
 		
 	}
 }
