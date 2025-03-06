@@ -6,10 +6,12 @@ public class HashMapTest {
 
 	public static void main(String[] args) {
 		
-		//<K,V >
+		//<K,V > (key and value - pair)
 		//does not maintain the order/index
 		
 		//Map(I)--> HashMap(C)
+		//HashMap is a raw type. References to generic type HashMap<K,V> should be parameterized
+		
 		
 		HashMap<String, Integer> markMap=new HashMap<String, Integer>();
 		
