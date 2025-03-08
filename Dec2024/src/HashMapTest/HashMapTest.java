@@ -1,6 +1,9 @@
 package HashMapTest;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class HashMapTest {
 
@@ -46,12 +49,11 @@ public class HashMapTest {
 		
 		
 		//
-		
 		HashMap<Integer, Integer> numMap=new HashMap<Integer, Integer>();
 		numMap.put(100, 1);
 		
-		
 		HashMap<String, String> empMap=new HashMap<String, String>();
+		System.out.println(empMap);
 		empMap.put("ravi", "SDET1'");
 		empMap.put("ravi", "SDET1");
 		empMap.put("dev", "SDET2");
@@ -60,24 +62,43 @@ public class HashMapTest {
 		empMap.put("naveen", "CTO");
 		empMap.put(null, "CEO");
 		
-		System.out.println(empMap);
+		System.out.println(empMap); //{}
 		//{null=CEO, dev=SDET2, ravi=SDET1, naveen=CTO, jyothi=SDET Manager, divya=dev Manager}
+		//It is displaying different order ..it is not maintaining the order
 		System.out.println(empMap.size()); //6
 		
-		
 		HashMap<String, Object> userMap=new HashMap<String, Object>();
+		//Wrapper classes
 		userMap.put("tom", "IBM");
 		userMap.put("designation", "SDET");
 		userMap.put("salary", 14.55);
 		userMap.put("isActive", true);
 		
 		
+		//
+		//Map(I) ---> HashMap(C), TreeMap, LinkedHashMap
+
+		Map<String, String> stMap;
+		//Map<Object, String> stMap = new HashMap<Object, String>();
+		//stMap = new LinkedHashMap<String, String>();
+		stMap = new TreeMap<String, String>();
 		
-		
-		
-		
-		
-			
+		System.out.println(stMap);
+		System.out.println(stMap.size());
+
+		stMap.put("ravi", "SDET1");
+		stMap.put("dev", "SDET2");
+		stMap.put("jyothi", "SDET Manager");
+		stMap.put("divya", "dev Manager");
+		stMap.put("Naveen", "CTO");
+		stMap.put("123", "CTO");
+		//stMap.put(null, "CEO");
+//		stMap.put(1, "CTO");
+//		stMap.put(12.33, "CTO");
+//		stMap.put(true, "CTO");
+
+
+		System.out.println(stMap);
 		
 	}
 
