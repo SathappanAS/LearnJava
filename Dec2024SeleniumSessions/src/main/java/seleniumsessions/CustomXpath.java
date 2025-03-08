@@ -17,15 +17,15 @@ public class CustomXpath {
 		// /html/body/div/div[2]/ul/li[2]/div/div/input
 		
 		//2. relative xpath/custom xpath: // (starts with two forward slash)
-		//htmltag[@attr='value']
+		/*htmltag[@attr='value']*/
 		//input[@placeholder='Email Address']
 		//input[@value='Login']
 		
-		//htmltage[@attr1='value' and @attr1='value]
+		/*htmltage[@attr1='value' and @attr1='value]*/
 		//input[@type='text' and @name='email']
 		//input[@type='text' and @name='email' and @placeholder='E-Mail Address']
 		
-		//input[@name and @type and @placeholder] //invalid xpath
+		//input[@name and @type and @placeholder] 
 		
 		//parent to child:
 		//direct : / --> only direct
