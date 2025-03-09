@@ -145,12 +145,6 @@ public class CustomXpath {
 				//*[@id="input-email"]: 200 --> 50th
 				//input[@id="input-email"] ---> 20 --> 
 		
-		
-	
-		
-		
-		
-		
 	}
 
 }
