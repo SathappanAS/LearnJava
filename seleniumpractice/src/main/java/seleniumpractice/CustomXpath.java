@@ -8,6 +8,7 @@ import org.openqa.selenium.*;
 
 public class CustomXpath {
 
+	//We can use this when position(index) fixed
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.discover.com/");
