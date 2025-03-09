@@ -15,4 +15,3 @@ public class CustomXpath {
 		System.out.println(b1);
 
 }}
-
