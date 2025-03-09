@@ -113,6 +113,44 @@ public class CustomXpath {
 		//ends-with(): NA in xpath:
 		
 		
+		
+				//index in xpath:
+				// (//a[text()='Forgotten Password'])[2]
+				//driver.findElement(By.xpath("(//a[text()='Forgotten Password'])[2]")).click();
+				
+				// (//form//input[@class='form-control'])[1]
+				// (//form//input[@class='form-control'])[position()=1]
+				
+				// (//form//input[@class='form-control'])[last()]
+				// (//form//input[@class='form-control'])[last()-1]
+				// (//form//input[@class='form-control'])[position()=last()]
+				
+				//capture group:
+				// ((//div[contains(@class,'navFooterLinkCol')])[last()]//a)[last()]
+				// ((//div[contains(@class,'navFooterLinkCol')])[last()]//a)[last()-1]
+				// ((//div[contains(@class,'navFooterLinkCol')])[last()]//a)[1]
+		
+		
+		/*Interivew Question*/
+		boolean b1 = driver.findElement(By.xpath("((//div[contains(@class,'navFooterLinkCol')])[last()]//a)[last()]")).isDisplayed();
+		System.out.println(b1);
+		
+		
+		
+				// (//a[@class='list-group-item'])[last()]
+				
+				// (//select[@id='Form_getForm_Country']/option)[last()]
+				
+				
+				//*[@id="input-email"]: 200 --> 50th
+				//input[@id="input-email"] ---> 20 --> 
+		
+		
+	
+		
+		
+		
+		
 	}
 
 }
