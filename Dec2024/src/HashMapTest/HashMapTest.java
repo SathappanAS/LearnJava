@@ -15,7 +15,6 @@ public class HashMapTest {
 		//Map(I)--> HashMap(C)
 		//HashMap is a raw type. References to generic type HashMap<K,V> should be parameterized
 		
-		
 		HashMap<String, Integer> markMap=new HashMap<String, Integer>();
 		
 		markMap.put("jyothi",100);
@@ -62,6 +61,7 @@ public class HashMapTest {
 		empMap.put("naveen", "CTO");
 		empMap.put(null, "CEO");
 		
+		
 		System.out.println(empMap); //{}
 		//{null=CEO, dev=SDET2, ravi=SDET1, naveen=CTO, jyothi=SDET Manager, divya=dev Manager}
 		//It is displaying different order ..it is not maintaining the order
@@ -73,7 +73,6 @@ public class HashMapTest {
 		userMap.put("designation", "SDET");
 		userMap.put("salary", 14.55);
 		userMap.put("isActive", true);
-		
 		
 		//
 		//Map(I) ---> HashMap(C), TreeMap, LinkedHashMap
@@ -97,9 +96,6 @@ public class HashMapTest {
 //		stMap.put(12.33, "CTO");
 //		stMap.put(true, "CTO");
 
-
-		System.out.println(stMap);
-		
+		System.out.println(stMap);	
 	}
-
 }
