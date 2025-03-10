@@ -26,9 +26,5 @@ public class xpathAxesTwo {
 			System.out.println(result);
 		}
 		
-	}
-
-	
-	
-	
+	}	
 }

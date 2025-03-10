@@ -16,9 +16,7 @@ public class xpathAxesThree {
 		
 		driver = new ChromeDriver();
 		driver.get("https://selectorshub.com/xpath-practice-page/");
-		Thread.sleep(4000);
-
-		
+		Thread.sleep(4000);	
 		
 		if(columfind("Joe.Root").contains("Enabled")) {
 			System.out.println("PASS");
@@ -42,7 +40,5 @@ public class xpathAxesThree {
 		return colList;
 		
 	}
-	
 
-	
 }
