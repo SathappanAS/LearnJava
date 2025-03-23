@@ -27,6 +27,7 @@ public class CricinfoWebTable {
 		System.out.println(getScoreCard("Virat Kohli"));
 		System.out.println(getScoreCard("Axar Patel"));
 
+		driver.quit();
 
 	}
 
