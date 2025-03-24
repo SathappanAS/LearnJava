@@ -1,5 +1,5 @@
 package seleniumsessions;
-
+////span[text()='Venkatesh Iyer']/ancestor::td/following-sibling::td/span//span
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
