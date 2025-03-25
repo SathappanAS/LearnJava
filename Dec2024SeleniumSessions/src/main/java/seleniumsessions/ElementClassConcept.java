@@ -12,27 +12,20 @@ public class ElementClassConcept {
 		
 		Thread.sleep(4000);
 		
-		
 		//1. invalid -- InvalidSelectorException
 		//driver.findElement(By.className("form-control private-form__control")).sendKeys("test@gmail.com");
-		
 		
 		//2. valid
 		//driver.findElement(By.cssSelector("input.form-control.private-form__control")).sendKeys("test@gmail.com");
 		
-		
 		//3. valid
-		driver.findElement(By.xpath("//input[@class='form-control private-form__control']")).sendKeys("test@gmail.com");
-		
+		driver.findElement(By.xpath("//input[@class='form-control private-form__control']")).sendKeys("test@gmail.com");	
 		
 		//4. valid
 		driver.findElement(By.className("private-form__control")).sendKeys("test@gmail.com");
 		
 		//5. InvalidSelectorException: invalid selector:
-		//driver.findElement(By.xpath("///[@@id,'naveen']")).click();
-		
-		
+		//driver.findElement(By.xpath("///[@@id,'naveen']")).click();		
 		
 	}
-
 }

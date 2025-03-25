@@ -41,7 +41,7 @@ public static void main(String[] args) {
 		//other attributes:
 		// htmltag[attr='value']
 		// input[name='email'] -- css
-		//input[@name='email'] -- xpath
+		// input[@name='email'] -- xpath
 		
 		// input[id='input-email']
 		// input[placeholder='E-Mail Address']
@@ -137,23 +137,23 @@ public static void main(String[] args) {
 		//option[normalize-space()='Angola']
 		
 		
-		//                   xpath          vs               css: 
-		//1. syntax:         complex                         simple
-		//2. performance:    good							 good
-		//3. text:           yes							 NA
-		//4. child to parent:yes                             NA
-		//5. parent to child:yes							 yes
-		//6. preceding-sibling:yes                           NA
-		//7. following-sibling:yes                           yes
-		//8. dynamic elements: yes                           yes
-		//9. ends-with:        NA                            yes
-		//10. space:           yes                           NA
-		//11. comma:           NA                            yes
-		//12. not:             yes                           yes
-		//13. index:           yes                           yes(+1)
-		//14. dot(.):          yes                           NA
-		//15. SVG:             yes                           NA
-		//16. SHADOW DOM:      NA                            yes		
+		//                      xpath          vs               css: 
+		//1. syntax:            complex                         simple
+		//2. performance:       good							 good
+		//3. text:               yes							 NA
+		//4. child to parent:   yes                             NA
+		//5. parent to child:   yes							 yes
+		//6. preceding-sibling:  yes                           NA
+		//7. following-sibling:  yes                           yes
+		//8. dynamic elements:   yes                           yes
+		//9. ends-with:          NA                            yes
+		//10. space:             yes                           NA
+		//11. comma:             NA                            yes
+		//12. not:               yes                           yes
+		//13. index:             yes                           yes(+1)
+		//14. dot(.):            yes                           NA
+		//15. SVG:               yes                           NA
+		//16. SHADOW DOM:        NA                            yes		
 	}
 
 }
