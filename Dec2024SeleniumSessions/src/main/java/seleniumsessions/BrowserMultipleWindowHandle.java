@@ -20,14 +20,12 @@ public class BrowserMultipleWindowHandle {
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://www.orangehrm.com/30-day-free-trial");// parent
-		
-		String parentWindowId = driver.getWindowHandle(); // partent id 
-		
-		
-		
+
+		String parentWindowId = driver.getWindowHandle(); // partent id
+
 		Actions act = new Actions(driver);
 		act.sendKeys(Keys.PAGE_DOWN).perform();
-		
+
 		WebElement fb_ele = driver.findElement(By.xpath("//img[@alt='facebook logo']"));
 		WebElement li_ele = driver.findElement(By.xpath("//img[@alt='linkedin logo']"));
 		WebElement yt_ele = driver.findElement(By.xpath("//img[@alt='youtube logo']"));
@@ -40,11 +38,10 @@ public class BrowserMultipleWindowHandle {
 		// set is another interface in java
 		// set is order less collection, doesnot maintain any index
 		// it always maintain the unique values and it can't have the duplicate value
-		
+
 		Iterator<String> it = handles.iterator();
 		// Iterator is another interface in java
-		
-		
+
 		while (it.hasNext()) {
 			String windowId = it.next();
 			driver.switchTo().window(windowId);
@@ -59,5 +56,5 @@ public class BrowserMultipleWindowHandle {
 		driver.switchTo().window(parentWindowId);
 		System.out.println("parent window title:" + driver.getTitle());
 
-}
+	}
 }
