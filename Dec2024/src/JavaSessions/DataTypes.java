@@ -73,7 +73,7 @@ public class DataTypes {
 		// Where you will use the long data type in production - pi value
 		
 		//6. Double
-		/*size: 6 byte - 64bits */
+		/*size: 8 byte - 64bits */
 		/*range: after . it can take up to 15 digit */
 		// Where you will use the long data type in production = Interest calculation
 		double d=12.3333333;
@@ -115,6 +115,9 @@ public class DataTypes {
 		boolean cc = false;
 		System.out.println(bb);
 		System.out.println(cc);
+		
+		char ch6 = 65;
+		System.out.println(ch6);
 	}
 
 }
