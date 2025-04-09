@@ -62,7 +62,7 @@ public class JavaScriptExecutorConcept {
 		
 		//webClick --> ActionsClick --> JsClick
 		WebElement agree = driver.findElement(By.name("agree"));
-		jsUtil.clickElementByJS(agree);
+		//jsUtil.clickElementByJS(agree);
 		
 		
 		

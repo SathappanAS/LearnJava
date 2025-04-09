@@ -94,9 +94,7 @@ public class NestedFramesHandle {
 //		driver.switchTo().defaultContent();
 //		String header = driver.findElement(By.tagName("h3")).getText();
 //		System.out.println(header);
-		
-		
-		
+				
 	}
 
 }
