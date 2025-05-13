@@ -41,7 +41,7 @@ public class ArithMeticOperations {
 		System.out.println(9%2); // (Reminder is 1 )
 		System.out.println(9/3); // (quotient is 3)
 		System.out.println(9/2); // (quotient is 4)
-		
+		System.out.print("test");
 	}
 
 }
